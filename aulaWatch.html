@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Keepo Kappa Kappa
+        </title>
+        <script>
+            function imprimirMensagem(){
+            var area = document.getElementById('areaDaMensagem');
+            var mensagem = document.getElementById('txtMensagem');
+
+            area.innerText="Olá "+mensagem.value;
+            document.getElementById("image").src='http://i.imgur.com/YtfhYkW.png';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="areaDaMensagem">
+            oi :)
+        </div>
+
+        <input type="text" value="" id="txtMensagem">
+        <input type="button" value="OK" onclick="imprimirMensagem()">
+        </br>
+        <img id="image" src=""/>
+    </body>
+</html>

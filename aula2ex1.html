@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Maior "Nuemro"</title>
+        <style>
+            label#cozao{
+                margin-right: 3px
+            }
+            div{
+                color: red
+            }
+            label{
+                color: red
+            }
+        </style>
+
+        <script>
+            function maiorNumero(){
+                var x;
+                if(document.getElementById("n1").value>document.getElementById("n2").value){
+                    if(document.getElementById("n1").value>document.getElementById("n3").value){
+                        x=document.getElementById("n1").value;
+                    }else{
+                        x=document.getElementById("n3").value;
+                    }
+                }else if(document.getElementById("n2").value>document.getElementById("n3").value){
+                    x=document.getElementById("n2").value;
+                }else{
+                    x=document.getElementById("n3").value;
+                }
+                var mensagem = document.getElementById('areaDaMensagem');
+                mensagem.innerHTML="o maior numero é: " + x;
+                document.getElementById("corpo").background="http://lh4.ggpht.com/_XxqUKSa9Z7s/TXv7vbXrgkI/AAAAAAAAAFA/SQrYrIfMDg0/s740/1230083.gif";
+            }		
+	    </script>
+	<head>
+
+	
+
+	<body id="corpo" background="">
+        <label> Primeiro Numero </label>
+		<input type="number" id="n1" value=""/><br/>
+        <label> Segundo Numero </label>
+		<input type="number" id="n2" value=""/><br/>
+        <label id="cozao"> Terceiro Numero </label>
+		<input type="number" id="n3" value=""/><br/>
+		<input type="button" value="Me mostre o Maior" onclick="maiorNumero()"/>
+        <div id="areaDaMensagem">
+            o maior numero é: 
+        </div>
+        <img id="image" src=""/>
+	</body>
+
+</html>
